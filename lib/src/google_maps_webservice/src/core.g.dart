@@ -28,7 +28,7 @@ Geometry _$GeometryFromJson(Map<String, dynamic> json) => Geometry(
     );
 
 Map<String, dynamic> _$GeometryToJson(Geometry instance) => <String, dynamic>{
-      'location': instance.location,
+      'location': instance.location.toJson(),
       'location_type': instance.locationType,
       'viewport': instance.viewport,
       'bounds': instance.bounds,
